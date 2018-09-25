@@ -1,0 +1,269 @@
+@import "mini/reset.less";
+//375/16
+@rem :23rem;
+#wrap{
+  width:100%;
+  height:100%;
+  //overflow-x:hidden;
+  #header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 60/@rem;
+    background: pink;
+    //头部左半边
+    .headerLeft{
+      float:left;
+      width:122.5/@rem ;
+      height:100%;
+
+      .logo{
+        width:45/@rem;
+        height:100%;
+        float:left;
+        text-align: center;
+        line-height: 60/@rem;
+        font-size: 19/@rem;
+        color:#9c9c9c;
+      }
+      .sign{
+        float:left;
+        width:2.3/@rem;
+        height:20/@rem;
+        background: #9c9c9c;
+        margin-left:5/@rem;
+        margin-right:5/@rem;
+        margin-top:20/@rem;
+
+      }
+    .headerPlace{
+      float:left;
+      width:45/@rem;
+      height:100%;
+      text-align: center;
+      line-height: 60/@rem;
+      font-size: 19/@rem;
+      color:#9c9c9c;
+    }
+
+
+  }
+    .headerCenter{
+      float:left;
+      width:300/@rem;
+      height:60/@rem;
+      line-height: 60/@rem;
+      margin-left: 20/@rem;
+      position: relative;
+        //box-sizing: border-box;
+      .headerIn{
+        float:left;
+        width:300/@rem;
+        height:40/@rem;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #e9e9e9;
+        background:#e9e9e9;
+        margin-top: 10/@rem;
+
+      }
+      .search{
+        background-image: url('../imgE宠/search.png');
+        background-repeat: no-repeat;
+        width:20/@rem;
+        height:20/@rem;
+        position: absolute;
+        //设置背景图的大小
+        background-size: 15/@rem 15/@rem;
+        top:6/@rem;
+        right:0;
+        margin-top:19/@rem;
+      }
+
+    }
+    .headerRight{
+      float:right;
+      width:65.5/@rem;
+      height:60/@rem;
+      //background: deeppink;
+      position: relative;
+      .headerDope{
+        //float: left;
+        width:40/@rem;
+        height:40/@rem;
+        background-image:url('../imgE宠/mydope.png');
+        background-repeat: no-repeat;
+        background-size: 40/@rem 40/@rem;
+        position:absolute;
+        top:50%;
+        left: 50%;
+        margin-left: -20/@rem;
+        margin-top: -20/@rem;
+      }
+    }
+  }
+  #contentMine{
+    width:100%;
+    padding-top:60/@rem;
+    .content{
+      position: relative;
+      background: hotpink;
+      //导航
+      .contentNav{
+        width:100%;
+        height:60/@rem;
+        line-height:60/@rem;
+        //ul永不换行
+        white-space: nowrap;
+        //float:left;
+        //background: hotpink;
+        position: relative;
+        .navList{
+          position:absolute;
+          top:0;
+          left:0;
+          li{
+            //float:left;该元素设置了inline-block不能设置浮动，这样才能实现永不换行
+            margin-left: 50/@rem;
+            display: inline-block;
+            //background: yellow;
+            height:60/@rem;
+            font-size: 0.9rem;
+            a{
+              color:#666;
+            }
+            .green{
+              position:relative;
+              a:nth-child(1){
+                color:#459d36;
+              }
+              .smallGreen{
+                width:54/@rem;
+                height:2/@rem;
+                background: #459d36;
+                position:absolute;
+                bottom: 1px;
+                left:-9/@rem;
+              }
+            }
+
+
+          }
+
+        }
+
+
+
+      }
+      //轮播图
+      .contentBanner{
+        width:100%;
+        height:240/@rem;
+        background: hotpink;
+        position: relative;
+        //margin-top: 240/@rem;
+        .banList{
+          float:left;
+          position:absolute;
+          top:0;
+          left:0;
+          height:100%;
+          //overflow: hidden;
+          li{
+            float:left;
+            height:100%;
+            img{
+              width:100%;
+              height:100%;
+            }
+          }
+
+        }
+        .icon{
+          width:100%;
+          height:7px;
+          position:absolute;
+          bottom:20px;
+          left:0;
+          text-align: center;
+          line-height: 7px;
+          &>span{
+            display: inline-block;
+            //vertical-align: middle;
+            width:7px;
+            height:7px;
+            border:1px solid #fff;
+            border-radius: 50%;
+            background: white;
+            margin:0 5px;
+            transition: width 1s;
+            &.active{
+              width:16px;
+              height:7px;
+              border-radius:4px;
+              background: #fff;
+            }
+          }
+        }
+
+      }
+      //图片
+      .contentImg{
+        width:100%;
+        height:260/@rem;
+        .imgList{
+          width:100%;
+          height:260/@rem;
+          &>li{
+            float:left;
+            width:33.333333%;
+            height:260/@rem;
+            img{
+              width: 100%;
+              height:100%;
+            }
+          }
+        }
+      }
+      //小图
+      .contentSmall{
+        width:100%;
+        height:240/@rem;
+        position:relative;
+        .smallImg{
+          //float:left;
+          width: 100%;
+          height:120/@rem;
+          position:absolute;
+          top:0;
+          left:0;
+          li{
+            width: 20%;
+            height:100%;
+            float:left;
+            img{
+              width:100%;
+              height:100%;
+            }
+          }
+        }
+
+      }
+      //新小主
+      //.contentNewSmall{
+      //    height:200/@rem;
+      //    background-image: url('../imgE宠/newSmall.jpg');
+      //    background-repeat: no-repeat;
+      //    background-position: center;
+      // }
+
+      }
+    }
+  }
+
+
+
+
+
+

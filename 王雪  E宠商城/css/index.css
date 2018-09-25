@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.60869565rem;
+  background: pink;
+}
+#wrap #header .headerLeft {
+  float: left;
+  width: 5.32608696rem;
+  height: 100%;
+}
+#wrap #header .headerLeft .logo {
+  width: 1.95652174rem;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 2.60869565rem;
+  font-size: 0.82608696rem;
+  color: #9c9c9c;
+}
+#wrap #header .headerLeft .sign {
+  float: left;
+  width: 0.1rem;
+  height: 0.86956522rem;
+  background: #9c9c9c;
+  margin-left: 0.2173913rem;
+  margin-right: 0.2173913rem;
+  margin-top: 0.86956522rem;
+}
+#wrap #header .headerLeft .headerPlace {
+  float: left;
+  width: 1.95652174rem;
+  height: 100%;
+  text-align: center;
+  line-height: 2.60869565rem;
+  font-size: 0.82608696rem;
+  color: #9c9c9c;
+}
+#wrap #header .headerCenter {
+  float: left;
+  width: 13.04347826rem;
+  height: 2.60869565rem;
+  line-height: 2.60869565rem;
+  margin-left: 0.86956522rem;
+  position: relative;
+}
+#wrap #header .headerCenter .headerIn {
+  float: left;
+  width: 13.04347826rem;
+  height: 1.73913043rem;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #e9e9e9;
+  background: #e9e9e9;
+  margin-top: 0.43478261rem;
+}
+#wrap #header .headerCenter .search {
+  background-image: url('../imgE宠/search.png');
+  background-repeat: no-repeat;
+  width: 0.86956522rem;
+  height: 0.86956522rem;
+  position: absolute;
+  background-size: 0.65217391rem 0.65217391rem;
+  top: 0.26086957rem;
+  right: 0;
+  margin-top: 0.82608696rem;
+}
+#wrap #header .headerRight {
+  float: right;
+  width: 2.84782609rem;
+  height: 2.60869565rem;
+  position: relative;
+}
+#wrap #header .headerRight .headerDope {
+  width: 1.73913043rem;
+  height: 1.73913043rem;
+  background-image: url('../imgE宠/mydope.png');
+  background-repeat: no-repeat;
+  background-size: 1.73913043rem 1.73913043rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.86956522rem;
+  margin-top: -0.86956522rem;
+}
+#wrap #contentMine {
+  width: 100%;
+  padding-top: 2.60869565rem;
+}
+#wrap #contentMine .content {
+  position: relative;
+  background: hotpink;
+}
+#wrap #contentMine .content .contentNav {
+  width: 100%;
+  height: 2.60869565rem;
+  line-height: 2.60869565rem;
+  white-space: nowrap;
+  float: left;
+  position: relative;
+}
+#wrap #contentMine .content .contentNav .navList {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap #contentMine .content .contentNav .navList li {
+  margin-left: 2.17391304rem;
+  display: inline-block;
+  height: 2.60869565rem;
+  font-size: 0.9rem;
+}
+#wrap #contentMine .content .contentNav .navList li a {
+  color: #666;
+}
+#wrap #contentMine .content .contentNav .navList li .green {
+  position: relative;
+}
+#wrap #contentMine .content .contentNav .navList li .green a:nth-child(1) {
+  color: #459d36;
+}
+#wrap #contentMine .content .contentNav .navList li .green .smallGreen {
+  width: 2.34782609rem;
+  height: 0.08695652rem;
+  background: #459d36;
+  position: absolute;
+  bottom: 1px;
+  left: -0.39130435rem;
+}
+#wrap #contentMine .content .contentBanner {
+  width: 100%;
+  height: 10.43478261rem;
+  background: hotpink;
+  position: relative;
+}
+#wrap #contentMine .content .contentBanner .banList {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+#wrap #contentMine .content .contentBanner .banList li {
+  float: left;
+  height: 100%;
+}
+#wrap #contentMine .content .contentBanner .banList li img {
+  width: 100%;
+  height: 100%;
+}
+#wrap #contentMine .content .contentBanner .icon {
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  text-align: center;
+  line-height: 7px;
+}
+#wrap #contentMine .content .contentBanner .icon > span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: white;
+  margin: 0 5px;
+  transition: width 1s;
+}
+#wrap #contentMine .content .contentBanner .icon > span.active {
+  width: 16px;
+  height: 7px;
+  border-radius: 4px;
+  background: #fff;
+}
+#wrap #contentMine .content .contentImg {
+  width: 100%;
+  height: 11.30434783rem;
+}
+#wrap #contentMine .content .contentImg .imgList {
+  width: 100%;
+  height: 11.30434783rem;
+}
+#wrap #contentMine .content .contentImg .imgList > li {
+  float: left;
+  width: 33.333333%;
+  height: 11.30434783rem;
+}
+#wrap #contentMine .content .contentImg .imgList > li img {
+  width: 100%;
+  height: 100%;
+}
+#wrap #contentMine .content .contentSmall {
+  width: 100%;
+  height: 10.43478261rem;
+  position: relative;
+}
+#wrap #contentMine .content .contentSmall .smallImg {
+  width: 100%;
+  height: 5.2173913rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap #contentMine .content .contentSmall .smallImg li {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+#wrap #contentMine .content .contentSmall .smallImg li img {
+  width: 100%;
+  height: 100%;
+}
